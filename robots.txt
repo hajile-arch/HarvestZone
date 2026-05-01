@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harvestzone.netlify.app/sitemap.xml
