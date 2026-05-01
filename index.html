@@ -1,0 +1,1363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harvest Zone Sdn Bhd – Condominium Facilities Supplier</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">
+        <span class="lc">禾莊</span>
+        <div>
+          <div class="lt">Harvest Zone</div>
+          <div class="ls">Sdn Bhd</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-left reveal">
+        <span class="hero-tag"
+          >Condominium Facilities Supplier · Kuala Lumpur</span
+        >
+        <h1 class="hero-title">
+          Your Trusted<br />Building <span>Facilities</span><br />Partner
+        </h1>
+        <p class="hero-desc">
+          Harvest Zone Sdn Bhd supplies signages, car stickers, safety
+          equipment, and custom-made products tailored for condominium and
+          commercial buildings.
+        </p>
+        <div class="hero-btns">
+          <a href="#products" class="btn-primary">View Products</a>
+          <a href="#contact" class="btn-outline">Get a Quote</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div>
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Custom Made</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-grid">
+          <div class="hero-card">
+            <div class="hero-card-icon">🪧</div>
+            <div class="hero-card-title">Signages</div>
+            <div class="hero-card-desc">
+              LED signs, sign boards, road standees & cut-out letters
+            </div>
+            <div class="hero-card-accent"></div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">🚦</div>
+            <div class="hero-card-title">Safety</div>
+            <div class="hero-card-desc">
+              Barriers, wheel clamps, convex mirrors & traffic cones
+            </div>
+            <div class="hero-card-accent"></div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">🛗</div>
+            <div class="hero-card-title">Lift Fittings</div>
+            <div class="hero-card-desc">
+              Lift canvas, door stickers, rubber studs & acrylic covers
+            </div>
+            <div class="hero-card-accent"></div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">♻️</div>
+            <div class="hero-card-title">Waste Bins</div>
+            <div class="hero-card-desc">
+              Stainless steel, plastic & recycle station bins
+            </div>
+            <div class="hero-card-accent"></div>
+          </div>
+        </div>
+        <div class="hero-contact">
+          <span>📧</span
+          ><a href="mailto:Harvestzone2@gmail.com">Harvestzone2@gmail.com</a>
+          <span style="margin-left: 0.5rem">📞</span
+          ><a href="tel:+60391058098">03-9105 8098</a> <span>&nbsp;|&nbsp;</span
+          ><a href="tel:+60166260711">016-626 0711</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-visual reveal">
+        <div class="about-box">
+          <div class="about-box-quote">
+            "Supplying quality facilities that make buildings look and function
+            their best."
+          </div>
+          <div class="about-box-text">
+            Based in Kuala Lumpur, Harvest Zone Sdn Bhd has been a reliable
+            partner for condominium management offices, property developers, and
+            commercial buildings across Malaysia.
+          </div>
+        </div>
+        <div class="about-accent"></div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">Built on Quality<br />& Reliability</h2>
+        <p class="section-desc">
+          We specialize in custom-made products that meet the specific needs of
+          your property. Every item is crafted with attention to detail and
+          delivered with professionalism.
+        </p>
+        <ul class="about-list">
+          <li>Custom fabrication for signages, stickers & lettering</li>
+          <li>Full supply of safety and traffic management equipment</li>
+          <li>Lift interior fittings and protective accessories</li>
+          <li>Notice boards, display stands and acrylic products</li>
+          <li>Waste disposal and recycling bin solutions</li>
+          <li>On-site installation available</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="cat-header reveal">
+        <div>
+          <span class="section-label">What We Offer</span>
+          <h2 class="section-title">Our Products</h2>
+        </div>
+        <div class="cat-tabs">
+          <button class="tab-btn active" onclick="showCat('all', this)">
+            All
+          </button>
+          <button class="tab-btn" onclick="showCat('signage', this)">
+            Signage
+          </button>
+          <button class="tab-btn" onclick="showCat('safety', this)">
+            Safety
+          </button>
+          <button class="tab-btn" onclick="showCat('lift', this)">
+            Lift & Mats
+          </button>
+          <button class="tab-btn" onclick="showCat('notice', this)">
+            Boards & Boxes
+          </button>
+          <button class="tab-btn" onclick="showCat('waste', this)">
+            Waste Bins
+          </button>
+        </div>
+      </div>
+
+      <!-- SIGNAGE -->
+      <div class="prod-section active" id="cat-signage" data-cat="signage">
+        <div class="prod-section-title">LED Signs <span>Custom Made</span></div>
+        <div class="gallery hero-gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'LED Sign – The Sentral Residences')"
+          >
+            <img
+              class="gimg"
+              src="images/the-sentral-residences.jpg"
+              
+              alt="The Sentral Residences"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">The Sentral Residences</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Directional Pylon Sign')"
+          >
+            <img
+              class="gimg"
+              src="images/directional-pylon.jpeg"
+              style="object-position: center top"
+              alt="Directional Pylon"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Directional Pylon</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'LED Directory Sign')"
+          >
+            <img
+              class="gimg"
+              src="images/block-directory.jpeg"
+              style="object-position: center top;"
+              alt="LED Directory Sign"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Block Directory</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, '28 Mont Kiara LED Sign')"
+          >
+            <img
+              class="gimg"
+              src="images/28-mont-kiara.jpg"
+              
+              alt="28 Mont Kiara LED Sign"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">28 Mont Kiara</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Sign Boards <span>Custom Made</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Floor Listing Sign Board')"
+          >
+            <img
+              class="gimg"
+              src="images/floor-listing-board.jpg"
+              style="object-position: center top;"
+              alt="Floor Listing Board"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Floor Listing Board</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Outdoor Sign Board Pole')"
+          >
+            <img
+              class="gimg"
+              src="images/outdoor-pole-board.jpg"
+              alt="Outdoor Board Pole"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Outdoor Pole Board</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'East Lobby Sign Board')"
+          >
+            <img
+              class="gimg"
+              src="images/directory-board.jpg"
+              style="object-position: center top;"
+              alt="Directory Board"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Directory Board</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Block Number Sign Board')"
+          >
+            <img
+              class="gimg"
+              src="images/block-number-sign.jpg"
+              alt="Block Number Sign"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Block Number Sign</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Road Sign Standees <span>Custom Made</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Road Sign Standee – Cones')"
+          >
+            <img
+              class="gimg"
+              src="images/parking-restriction.jpg"
+              alt="Parking Restriction Standee"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Parking Restriction</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Road Sign Standee – Warning')"
+          >
+            <img
+              class="gimg"
+              src="images/warning-standee.jpg"
+              alt="Warning Standee"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Warning Standee</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Road Sign Standee – Pole')"
+          >
+            <img
+              class="gimg"
+              src="images/pickup-dropoff-standee.jpg"
+              alt="Pickup & Dropoff Standee"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Pickup & Dropoff Standee</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Car Stickers & Stencils <span>Custom Made</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Car Sticker – PRA 2022')"
+          >
+            <img
+              class="gimg"
+              src="images/seasonal-car-sticker.jpg"
+              style="object-fit: scale-down;"
+              alt="Seasonal Car Sticker"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Seasonal Car Sticker</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Annual Car Sticker')"
+          >
+            <img
+              class="gimg"
+              src="images/annual-car-sticker.jpg"
+              style="object-fit: scale-down;"
+              alt="Annual Car Sticker"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Annual Car Sticker</div>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLb(this, 'Car Park Stencil')">
+            <img
+              class="gimg"
+              src="images/car-park-stencil.jpg"
+              alt="Car Park Stencil"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Car Park Stencil</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Cut-Out Letters <span>Custom Made</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Cut-Out Letters – Rotary Club KL DiRaja')"
+          >
+            <img
+              class="gimg"
+              src="images/rotary-club-of-KL-DiRaja.jpg"
+              alt="Rotary Club of KL DiRaja"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Rotary Club of KL DiRaja</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Cut-Out Letters – Benz & Carlton')"
+          >
+            <img
+              class="gimg"
+              src="images/benz-&-carlton-group.jpg"
+              alt="Benz & Carlton Group"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Benz & Carlton Group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAFETY -->
+      <div class="prod-section" id="cat-safety" data-cat="safety">
+        <div class="prod-section-title">
+          Road Barriers & Poles <span>Safety Equipment</span>
+        </div>
+        <div class="gallery">
+          <div class="gallery-item" onclick="openLb(this, 'Road Barriers')">
+            <img
+              class="gimg"
+              src="images/roadbarrier.jpg"
+              style="object-position: center bottom"
+              alt="Road Barriers"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Road Barriers</div>
+              
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLb(this)">
+            <img
+              class="gimg"
+              src="images/collapsible-parking-pole.png"
+              style="object-fit:scale-down"
+              alt="Collapsible Parking Pole"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Collapsible Parking Pole</div>
+              <div class="gallery-item-spec">50.8mm Dia × 609.6mm (H)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Collapsible Parking Pole')"
+          >
+            <img
+              class="gimg"
+              src="images/elastic-pole.png"
+              style="object-fit:scale-down"
+              alt="Elastic Pole"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Elastic Pole</div>
+              <div class="gallery-item-spec">80mm Dia × 780mm (H)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Traffic Cone with Sand Base – 770mm')"
+          >
+            <img
+              class="gimg"
+              src="images/traffic-cone.png"
+              style="object-fit:scale-down"
+              alt="Traffic Cone with Sand Base"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Traffic Cone with Sand Base</div>
+              <div class="gallery-item-spec">770mm (H)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Wheel Clamps & Guards <span>Safety Equipment</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Wheel Clamp – Small & Big')"
+          >
+            <img
+              class="gimg"
+              src="images/wheel-clamp.png"
+              style="object-fit:scale-down"
+              alt="Wheel Clamp"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Wheel Clamp</div>
+                <div class="gallery-item-spec">
+                Small: 330mm - 432mm<br>
+                Big: 406mm - 584mm
+                </div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Corner Guard – 100x100x800mm')"
+          >
+            <img
+              class="gimg"
+              src="images/corner-guard.png"
+              style="object-fit:scale-down"
+              alt="Corner Guard"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Corner Guard</div>
+              <div class="gallery-item-spec">100 L x 100 W x800 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Wheel Stopper – 550x148x120mm')"
+          >
+            <img
+              class="gimg"
+              src="images/wheel-stopper.png"
+              style="object-fit:scale-down"
+              alt="Wheel Stopper"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Wheel Stopper</div>
+              <div class="gallery-item-spec">550 L x 148 W x 120 H (mm)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Rubber Humps <span>Safety Equipment</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Rubber Hump with Cats Eye – 500x350x50mm')"
+          >
+            <img
+              class="gimg"
+              src="images/rubberhump-catseye.png"
+              style="object-fit:scale-down"
+              alt="Rubber Hump with Cat's Eye"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Rubber Hump with Cat's Eye</div>
+                <div class="gallery-item-spec">500 L x 350 W x 50 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Rubber Hump – Installed')"
+          >
+            <img
+              class="gimg"
+                src="images/rubberhump.jpg"
+                style="object-position: center bottom"
+              alt="Installed Rubber Humps"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Installed Rubber Humps</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Convex Mirrors <span>Safety Equipment</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Convex Mirror Installed')"
+          >
+            <img
+              class="gimg"
+                src="images/convex-mirror-installed.jpg"
+
+              alt="Convex Mirror – Installed"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Convex Mirror – Installed</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Convex Mirror with Sign')"
+          >
+            <img
+              class="gimg"
+              src="images/convex-mirror-with-sign.jpg"
+              alt="Convex Mirror with Sign"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Convex Mirror with Sign</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Convex Mirror – 600mm & 800mm dia')"
+          >
+            <img
+              class="gimg"
+              src="images/convex-mirror.png"
+              style="object-fit:scale-down"
+              alt="Convex Mirror – 600mm & 800mm dia"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Convex Mirror w/o Cap</div>
+              <div class="gallery-item-spec">600mm / 800mm Diameter</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIFT & MATS -->
+      <div class="prod-section" id="cat-lift" data-cat="lift">
+        <div class="prod-section-title">
+          Lift Canvas & Protection <span>Lift Accessories</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Lift Canvas Protection')"
+          >
+            <img
+              class="gimg"
+              src="images/lift-canvas.jpg"
+              alt="Lift Canvas"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Lift Canvas</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Custom Lift Door Sticker')"
+          >
+            <img
+              class="gimg"
+              src="images/custom-door-sticker.jpg"
+              alt="Custom Lift Door Sticker"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Custom Lift Door Sticker</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Aluminium Chequered Plate')"
+          >
+            <img
+              class="gimg"
+              src="images/aluminium-chequered-plate.jpg"
+              alt="Aluminium Chequered Plate"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Aluminium Chequered Plate</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Lift Wall Acrylic Cover')"
+          >
+            <img
+              class="gimg"
+              src="images/lift-wall-acrylic-cover.jpg"
+              alt="Lift Wall Acrylic Cover"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Lift Wall Acrylic Cover</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Rubber Stud Installation <span>Lift Accessories</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Rubber Stud Installation')"
+          >
+            <img
+              class="gimg"
+                src="images/stud-installation.jpg"
+              alt="Rubber Stud Installation"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Stud Installation</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Rubber Stud – Installed Floor')"
+          >
+            <img
+              class="gimg"
+              src="images/installed-rubber-studs.jpg"
+              alt="Installed Rubber Studs"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Installed Rubber Studs</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Car Lift OCP Acrylic Cover – Before')"
+          >
+            <img
+              class="gimg"
+              src="images/car-lift-ocp-before.jpg"
+              alt="Car Lift OCP – Before"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Car Lift OCP – Before</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Car Lift OCP Acrylic Cover')"
+          >
+            <img
+              class="gimg"
+              src="images/car-lift-ocp-cover.jpg"
+              alt="Car Lift OCP Acrylic Cover"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Car Lift OCP Cover</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">Mats & Stands <span>Others</span></div>
+        <div class="gallery">
+          <div class="gallery-item" onclick="openLb(this, 'Rubber Stud Mat')">
+            <img
+              class="gimg"
+              src="images/rubber-stud-mat.jpg"
+              alt="Rubber Stud Mat"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Rubber Stud Mat</div>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLb(this, 'Tough Rib Mat')">
+            <img
+              class="gimg"
+              src="images/tough-rib-mat.jpg"
+              alt="Tough Rib Mat"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Tough Rib Mat</div>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLb(this, 'Laundry Mat')">
+            <img
+              class="gimg"
+              src="images/laundry-mat.png"
+              alt="Laundry Mat"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Laundry Mat</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="
+              openLb(this, 'Stainless Steel Retractable Belt Q Up Stand')
+            "
+          >
+            <img
+              class="gimg"
+              src="images/belt-q-up-stand.png"
+                style="object-fit:scale-down"
+              alt="Stainless Steel Retractable Belt Q Up Stand"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Stainless Steel Retractable Belt Q Up Stand</div>
+              <div class="gallery-item-spec">
+                Pole: 63.5mm (dia)<br>
+                Heigt: 910mm
+                </div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Stainless Steel Display Stand – A4/A3')"
+          >
+            <img
+              class="gimg"
+              src="images/display-stand-a4-a3.png"
+              style="object-fit:scale-down"
+              alt="Stainless Steel Display Stand – A4/A3"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Display Stand A4/A3</div>
+              <div class="gallery-item-spec">
+                Size: A4/A3
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTICE BOARDS & BOXES -->
+      <div class="prod-section" id="cat-notice" data-cat="notice">
+        <div class="prod-section-title">Notice Boards and Directories <span>Others</span></div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Notice Board – Sunway Velocity')"
+          >
+            <img
+              class="gimg"
+              src="images/sunway-velocity.jpg"
+              alt="Notice Board – Sunway Velocity"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Sunway Velocity Notice Board</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Tenant Listing Notice Board')"
+          >
+            <img
+              class="gimg"
+              src="images/tenant-listing-board.jpg"
+                style="object-fit:scale-down"
+              alt="Tenant Listing Directory Board"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Tenant Listing Directory Board</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Multi-Panel Notice Board')"
+          >
+            <img
+              class="gimg"
+              src="images/multi-panel-board.jpg"
+              alt="Multi-Panel Notice Board"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Multi-Panel Board</div>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLb(this, 'Gold Notice Board')">
+            <img
+              class="gimg"
+              src="images/gold-finish-board.jpg"
+                style="object-position:center top"
+              alt="Sunway Directory Board"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Sunway Directory Board</div>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLb(this, 'Acrylic A4 Holder')">
+            <img
+              class="gimg"
+              src="images/acrylic-a4-holder.jpg"
+              alt="Acrylic A4 Holder"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Acrylic A4 Holder</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Notice Board with Glass Panels')"
+          >
+            <img
+              class="gimg"
+              src="images/board-with-glass-panels.jpg"
+              alt="Notice Board with Glass Panels"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Board with Glass Panels</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Glass Sand Blast <span>Others</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Glass Sand Blast – Office Partition')"
+          >
+            <img
+              class="gimg"
+              src="images/office-partition.jpg"
+              alt="Office Partition"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Office Partition</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Glass Sand Blast – Privacy Screen')"
+          >
+            <img
+              class="gimg"
+              src="images/privacy-screen.jpg"
+              alt="Privacy Screen"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Privacy Screen</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Glass Sand Blast – Door Panel')"
+          >
+            <img
+              class="gimg"
+              src="images/door-panel-sandblast.jpg"
+              alt="Door Panel"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Door Panel Sandblast</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Glass Sand Blast – Entry Door')"
+          >
+            <img
+              class="gimg"
+              src="images/entry-door.jpg"
+              alt="Entry Door"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Entry Door</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Custom Made Boxes <span>Others</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Transparent Acrylic Suggestion Box')"
+          >
+            <img
+              class="gimg"
+              src="images/acrylic-box.jpg"
+              alt="Transparent Acrylic Box"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Transparent Acrylic Box</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Solid Colour Acrylic Drop Box')"
+          >
+            <img
+              class="gimg"
+              src="images/drop-box.jpg"
+              alt="Solid Colour Drop Box"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Solid Colour Drop Box</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WASTE BINS -->
+      <div class="prod-section" id="cat-waste" data-cat="waste">
+        <div class="prod-section-title">
+          Stainless Steel Bins <span>Waste Disposable</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Cigarette Bin – Stainless Steel')"
+          >
+            <img
+              class="gimg"
+              src="images/cigratte-bin-sunway-nexis.jpg"
+                style="object-fit:scale-down"
+              alt="Cigarette Bin – Stainless Steel"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Stainless Steel Bin – Sunway Nexis</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'SS01 – 345x170x660mm')"
+          >
+            <img
+              class="gimg"
+              src="images/SS01.png"
+                style="object-fit:scale-down"
+              alt="SS01"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">SS01</div>
+              <div class="gallery-item-spec">345 L x 170 W x 660 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'SS02 – 300mm Dia x 610mm H')"
+          >
+            <img
+              class="gimg"
+              src="images/SS02.png"
+              style="object-fit:scale-down"
+              alt="SS02"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">SS02</div>
+              <div class="gallery-item-spec">300mm Diameter x 610mm (H)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'SS03 – 380x230x750mm')"
+          >
+            <img
+              class="gimg"
+              src="images/SS03.png"
+              style="object-fit:scale-down"
+              alt="SS03"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">SS03</div>
+              <div class="gallery-item-spec">380 L x 230 W x 750 H (mm)</div>
+          </div>
+          
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Plastic Wheeled Bins <span>Waste Disposable</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'H660 Bin – 805x1340x1260mm')"
+          >
+            <img
+              class="gimg"
+              src="images/H660.png"
+              style="object-fit:scale-down"
+              alt="H660"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">H660</div>
+              <div class="gallery-item-spec">805 L x 1340 W x 1260 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'H240 Bin – 590x730x1007mm')"
+          >
+            <img
+              class="gimg"
+              src="images/H240.png"
+              style="object-fit:scale-down"
+              alt="H240"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">H240</div>
+              <div class="gallery-item-spec">590 L x 730 W x 1007 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'H120 Bin – 460x550x940mm')"
+          >
+            <img
+              class="gimg"
+              src="images/H120.png"
+              style="object-fit:scale-down"
+              alt="H120"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">H120</div>
+              <div class="gallery-item-spec">460 L x 550 W x 940 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Large Plastic Bins – Installed')"
+          >
+            <img
+              class="gimg"
+              src="images/installed-bins.jpg"
+              style="object-fit:scale-down"
+              alt="Installed Bins"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Installed Bins</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-section-title">
+          Recycle Station Bins & Decorative Bins <span>Waste Disposable</span>
+        </div>
+        <div class="gallery">
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Recycle Station – 590x730x1007mm')"
+          >
+            <img
+              class="gimg"
+              src="images/SS04.png"
+              style="object-fit:scale-down"
+              alt="Recycle Bins / SS04"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Recycle Bins / SS04</div>
+              <div class="gallery-item-spec">250 Dia x 600 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Semi-Circle Decorative Bin – 450x225x730mm')"
+          >
+            <img
+              class="gimg"
+              src="images/semi-circle-bin.png"
+              style="object-fit:scale-down"
+              alt="Semi-Circle Decorative Bin"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Semi-Circle Bin</div>
+              <div class="gallery-item-spec">450 W x 225 L x 730 H (mm)</div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openLb(this, 'Recycle Bins Installed')"
+          >
+            <img
+              class="gimg"
+              src="images/recycle-bins.jpg"
+              alt="Recycle Bins – Installed"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-label">Recycle Bins – Installed</div>
+              <div class="gallery-item-spec">590 W x 730 L x 1007 H (mm)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why">
+      <div class="reveal">
+        <span class="section-label" style="color: var(--gold-light)"
+          >Why Choose Us</span
+        >
+        <h2 class="section-title">The Harvest Zone<br />Difference</h2>
+        <p class="section-desc">
+          We don't just supply — we consult, fabricate, and install. Our team
+          understands the operational needs of condominium management and
+          delivers solutions that last.
+        </p>
+        <div class="why-features">
+          <div class="why-feat">
+            <div class="why-feat-title">Custom Fabrication</div>
+            <div class="why-feat-desc">
+              Every sign and product is made to your exact specifications and
+              brand requirements.
+            </div>
+          </div>
+          <div class="why-feat">
+            <div class="why-feat-title">One-Stop Supplier</div>
+            <div class="why-feat-desc">
+              From signage to safety equipment to waste bins — everything under
+              one roof.
+            </div>
+          </div>
+          <div class="why-feat">
+            <div class="why-feat-title">Fast Turnaround</div>
+            <div class="why-feat-desc">
+              We understand urgent requirements and work efficiently to meet
+              deadlines.
+            </div>
+          </div>
+          <div class="why-feat">
+            <div class="why-feat-title">On-Site Installation</div>
+            <div class="why-feat-desc">
+              Our team handles delivery and professional installation where
+              needed.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal">
+        <div class="why-box tall">
+          <div class="why-box-num">500+</div>
+          <div class="why-box-label">Properties Served</div>
+        </div>
+        <div class="why-box">
+          <div class="why-box-num">60+</div>
+          <div class="why-box-label">Product Variants</div>
+        </div>
+        <div class="why-box">
+          <div class="why-box-num">KL</div>
+          <div class="why-box-label">Based in Malaysia</div>
+        </div>
+        <div class="why-box">
+          <div class="why-box-num">100%</div>
+          <div class="why-box-label">Custom Made</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Request a Quote</h2>
+        <p class="section-desc">
+          Tell us what you need and we'll get back to you with a tailored
+          proposal.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val">
+              <a href="mailto:Harvestzone2@gmail.com">Harvestzone2@gmail.com</a>
+            </div>
+          </div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-val">
+              <a href="tel:+60391058098">03-9105 8098</a><br /><a
+                href="tel:+60166260711"
+                >016-626 0711</a
+              ><br /><a href="tel:+60123869711">012-386 9711</a>
+            </div>
+          </div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-val">Kuala Lumpur, Malaysia</div>
+          </div>
+          <div>
+            <div class="contact-item-label">Business Hours</div>
+            <div class="contact-item-val">
+              Mon – Fri: 9:00 AM – 6:00 PM<br />Sat: 9:00 AM – 1:00 PM
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label
+                ><input type="text" placeholder="Ahmad bin Abdullah" />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label
+                ><input type="tel" placeholder="012-345 6789" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label
+              ><input type="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label>Product / Service Needed</label>
+              <select>
+                <option value="">Select a category…</option>
+                <option>LED Signs & Signboards</option>
+                <option>Cut-Out Letters & Stencils</option>
+                <option>Car Stickers</option>
+                <option>Road Safety Equipment</option>
+                <option>Lift Accessories & Mats</option>
+                <option>Notice Boards & Displays</option>
+                <option>Glass Sand Blast</option>
+                <option>Waste Disposal Bins</option>
+                <option>Other / Multiple Items</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message / Details</label
+              ><textarea
+                placeholder="Describe what you need, quantity, size or any special requirements…"
+              ></textarea>
+            </div>
+            <button
+              class="btn-primary"
+              onclick="submitForm(this)"
+              style="width: 100%; text-align: center; padding: 1rem"
+            >
+              Send Enquiry
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <span class="footer-logo">禾莊</span>
+        <span>© 2025 Harvest Zone Sdn Bhd · All Rights Reserved</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:Harvestzone2@gmail.com">Email Us</a>
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+      <!-- keep these hidden for JS compat -->
+      <button id="lb-close" onclick="closeLb()">✕</button>
+      <button id="lb-prev" onclick="navLb(-1)">‹</button>
+      <button id="lb-next" onclick="navLb(1)">›</button>
+      <div id="lb-caption"></div>
+
+      <div class="lb-inner">
+        <div class="lb-image-side">
+          <img id="lb-img" src="" alt="" />
+        </div>
+        <div class="lb-detail-side">
+          <div class="lb-detail-top">
+            <div id="lb-category" class="lb-category"></div>
+            <div id="lb-name" class="lb-name"></div>
+            <div id="lb-spec-block" class="lb-spec-block" style="display: none">
+              <div class="lb-spec-label">Specifications</div>
+              <div id="lb-spec-value" class="lb-spec-value"></div>
+            </div>
+          </div>
+          <div class="lb-detail-bottom">
+            <div class="lb-nav-row">
+              <button class="lb-nav-btn" onclick="navLb(-1)">&#8592;</button>
+              <button class="lb-nav-btn" onclick="navLb(1)">&#8594;</button>
+            </div>
+            <button class="lb-close-btn" onclick="closeLb()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <script src="index.js"></script>
+  </body>
+</html>
