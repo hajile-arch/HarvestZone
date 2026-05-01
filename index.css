@@ -29,6 +29,20 @@ body {
     overflow-x: hidden;
 }
 
+/* WHASTSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 /* NAV */
 nav {
     position: fixed;
