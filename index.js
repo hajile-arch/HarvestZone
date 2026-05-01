@@ -98,10 +98,65 @@
 
       // Form
       function submitForm(btn) {
-        btn.textContent = "✓ Enquiry Sent!";
-        btn.style.background = "var(--gold)";
-        setTimeout(() => {
-          btn.textContent = "Send Enquiry";
-          btn.style.background = "";
-        }, 3000);
-      }
+  // basic validation
+  const name    = document.getElementById("f-name").value.trim();
+  const phone   = document.getElementById("f-phone").value.trim();
+  const email   = document.getElementById("f-email").value.trim();
+  const product = document.getElementById("f-product").value;
+  const message = document.getElementById("f-message").value.trim();
+  const status  = document.getElementById("form-status");
+
+  if (!name || !phone || !message) {
+    status.style.display = "block";
+    status.style.background = "#2a1a1a";
+    status.style.color = "#e88";
+    status.style.border = "1px solid #5a2a2a";
+    status.textContent = "Please fill in your name, phone number and message.";
+    return;
+  }
+
+  // loading state
+  btn.disabled = true;
+  btn.textContent = "Sending…";
+  status.style.display = "none";
+
+  const templateParams = {
+    from_name: name,
+    phone:     phone,
+    from_email: email || "Not provided",
+    product:   product || "Not specified",
+    message:   message,
+  };
+
+  emailjs.send("service_istqqlp", "template_gqh0dje", templateParams)
+    .then(() => {
+      // success
+      status.style.display = "block";
+      status.style.background = "#0d1f14";
+      status.style.color = "#6dbf8a";
+      status.style.border = "1px solid #1e4d2b";
+      status.textContent = "✓ Enquiry sent! We'll get back to you shortly.";
+
+      // clear the form
+      document.getElementById("f-name").value    = "";
+      document.getElementById("f-phone").value   = "";
+      document.getElementById("f-email").value   = "";
+      document.getElementById("f-product").value = "";
+      document.getElementById("f-message").value = "";
+
+      btn.textContent = "Send Enquiry";
+      btn.disabled = false;
+    })
+    .catch((err) => {
+      // error
+      status.style.display = "block";
+      status.style.background = "#2a1a1a";
+      status.style.color = "#e88";
+      status.style.border = "1px solid #5a2a2a";
+      status.textContent = "Something went wrong. Please call or email us directly.";
+      console.error("EmailJS error:", err);
+
+      btn.textContent = "Send Enquiry";
+      btn.disabled = false;
+    });
+}
