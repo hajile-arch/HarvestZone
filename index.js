@@ -136,6 +136,9 @@
       status.style.color = "#6dbf8a";
       status.style.border = "1px solid #1e4d2b";
       status.textContent = "✓ Enquiry sent! We'll get back to you shortly.";
+      setTimeout(() => {
+        status.style.display = "none";
+      }, 5000);
 
       // clear the form
       document.getElementById("f-name").value    = "";
